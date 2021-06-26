@@ -8,7 +8,7 @@ import (
 	"github.com/skovati/tmpst/ui"
 )
 
-// Main application logic
+// Run handles the main application logic
 func Run(args []string) {
 	// convert cli args to floats
 	lat, err := strconv.ParseFloat(args[1], 64)

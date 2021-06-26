@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// models the important info from the API json reponse
+// Forecast models the important info from the API json reponse
 type Forecast struct {
 	Name string
 	Temp float64

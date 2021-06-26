@@ -13,7 +13,7 @@ import (
 
 const testApi string = "https://api.weather.gov/gridpoints/MKX/37,63/forecast"
 
-// makes the API request and returns a slice of custom Forecast structs
+// GetFore makes the API request and returns a slice of custom Forecast structs
 func GetFore(lat float64, long float64) []Forecast {
 	var client = &http.Client{Timeout: 10 * time.Second}
 	// forecast to store API response data
