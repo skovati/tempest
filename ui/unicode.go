@@ -1,9 +1,10 @@
 package ui
 
 import (
-    "fmt"
+	"fmt"
 )
 
+// simply prints a line of unicode blocks for a simple ui
 func PrintLine() {
-    fmt.Println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+	fmt.Println("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 }

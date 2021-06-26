@@ -2,6 +2,10 @@
 
 tmpst (pronounced tempest) is a lightweight terminal weather application written in Go. It uses the reliable [US Gov't National Weather Service's API](https://weather-gov.github.io/api/).
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/skovati/tmpst)](https://goreportcard.com/report/github.com/skovati/tmpst)
+[![License](https://img.shields.io/badge/license-GPL-blue)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+
 ## installation
 clone repo, run tests, and compile
 ```sh

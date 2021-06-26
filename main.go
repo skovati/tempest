@@ -1,12 +1,12 @@
 package main
 
 import (
-    "os"
+	"os"
 
-    "github.com/skovati/tmpst/cmd"
+	"github.com/skovati/tmpst/cmd"
 )
 
 func main() {
-    // run cmd package with command line args
-    cmd.Run(os.Args)
+	// run cmd package with command line args
+	cmd.Run(os.Args)
 }
