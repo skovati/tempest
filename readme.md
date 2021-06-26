@@ -24,6 +24,8 @@ configuration found at $XDG_CONFIG_HOME/tmpst/config.yml
 ## features
 - [ ] config file
 - [ ] ascii art
+- [ ] actual tui
+- [ ] other subcommands
 
 ## removal
 ```sh
