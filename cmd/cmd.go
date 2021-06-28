@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"fmt"
-	"strconv"
+	// "strconv"
 
 	"github.com/skovati/tmpst/api"
 	"github.com/skovati/tmpst/ui"
@@ -10,22 +10,21 @@ import (
 
 // Run handles the main application logic
 func Run(args []string) {
-	// convert cli args to floats
-	lat, err := strconv.ParseFloat(args[1], 64)
-	if err != nil {
-		panic(err.Error)
-	}
-	long, err := strconv.ParseFloat(args[2], 64)
-	if err != nil {
-		panic(err.Error)
-	}
-
 	ui.PrintLine()
 	fmt.Println("welcome to tmpst")
+	fmt.Println("grabbing forecast data...")
 	ui.PrintLine()
+    fmt.Println()
+
+    // make addr struct
+    addr := api.Addr{
+        Street: "16 Lathrop St",
+        City: "Madison",
+        State: "WI",
+    }
 
 	// call api
-	forecasts := api.GetFore(lat, long)
+	forecasts := api.GetFore(addr)
 
 	for _, v := range forecasts {
 		ui.PrintLine()
