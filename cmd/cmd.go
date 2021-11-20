@@ -18,9 +18,9 @@ func Run(args []string) {
 
     // make addr struct
     addr := api.Addr{
-        Street: "16 Lathrop St",
-        City: "Madison",
-        State: "WI",
+        Street: "",
+        City: "",
+        State: "",
     }
 
 	// call api
